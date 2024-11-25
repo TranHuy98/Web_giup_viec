@@ -1,0 +1,100 @@
+/* contact field */
+#contact-field {
+  padding: 60px 3%;
+}
+.company-info {
+  width: 45%;
+}
+.company-info .detail{
+  margin: 10px 0 0;
+  padding: 25px;
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  transition: 0.5s;
+}
+.company-info .detail:hover{
+  cursor: pointer;
+  box-shadow: 0 0 10px #ccc;
+}
+.company-info .detail i{
+  font-size: 30px;
+  color: #01dcfe;
+}
+.customer-info {
+  width: 45%;
+}
+.customer-info-box {
+  color: #fff;
+  border: 1px solid #ccc;
+  width: 100%;
+  padding: 30px;
+  background-image: linear-gradient(to right, #01dcfe, #6e45b3);
+  font-size: 14px;
+}
+.customer-info-box h2.heading {
+  margin: 0 0 15px;
+}
+.customer-info-box p.note {
+  margin: 0 0 40px;
+}
+.customer-info-box input {
+  display: block;
+  border: none;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.4);
+  color: #fff;
+  margin: 15px 0 0;
+  width: 100%;
+}
+.customer-info-box input:focus{
+  outline: 1px solid #01dcfe;
+}
+.customer-info-box input::placeholder {
+  color: #fff;
+}
+.customer-info-box textarea {
+  display: block;
+  border: none;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.4);
+  color: #fff;
+  margin: 15px 0;
+  width: 100%;
+  resize: none;
+}
+.customer-info-box textarea:focus{
+  outline: 1px solid #01dcfe;
+}
+.customer-info-box textarea::placeholder {
+  color: #fff;
+}
+.customer-info-box button {
+  border: none;
+  border-radius: 0;
+  color: #FFF;
+  font-weight: bold;
+  transition: 0.5s;
+}
+/* end contact field */
+
+/* mobi */
+@media all and (max-width: 768px){
+  .customer-info{
+    width: 100%;
+  }
+  .company-info{
+    width: 100%;
+    padding: 0 5% 0 0;
+  }
+  .company-info .detail{
+    padding: 15px 0;
+  }
+  #contact-field{
+    padding: 40px 5%;
+  }
+}
+/* end mobi */
