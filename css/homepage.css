@@ -1,16 +1,17 @@
 /* banner */
 section#banner {
-  background: url(../assets/images/home/bg-banner-home5.png) #0e0a31 no-repeat;
+  background: url(../assets/images/home/bg-banner-home5.png) no-repeat;
   height: 600px;
   color: #fff;
   background-position: bottom left;
-  background-size: 100% auto;
+  background-size: cover;
   padding: 40px 3%;
 }
 .banner-text {
   width: 50%;
   line-height: 1.4;
   padding: 0 0 0 5%;
+  color: #00a64f;
 }
 .banner-text h3.title {
   font-size: 24px;
@@ -23,6 +24,8 @@ section#banner {
 }
 .banner-text p.banner-quote {
   font-size: 18px;
+  color: #FFF;
+  font-weight: bold;
 }
 .banner-image {
   width: 45%;
@@ -65,7 +68,7 @@ section#banner {
 .slick-prev:before {
   font-family: "Font Awesome 5 Free";
   content: "\f104";
-  color: #07d6fb;
+  color: #00a64f;
   font-size: 30px;
   font-weight: 900;
 }
@@ -73,7 +76,7 @@ section#banner {
 .slick-next:before {
   font-family: "Font Awesome 5 Free";
   content: "\f105";
-  color: #07d6fb;
+  color: #00a64f;
   font-size: 30px;
   font-weight: 900;
 }
@@ -95,7 +98,7 @@ section#banner {
   text-align: center;
 }
 #home-service p.title {
-  color: #7141b1;
+  color: #242021;
   font-size: 14px;
   font-weight: bold;
 }
@@ -105,6 +108,7 @@ section#banner {
   line-height: 1.3;
   margin: 5px 0 45px;
   font-family: "Montserrat", sans-serif;
+  color: #0ea54c;
 }
 .service-card {
   background: #fff;
@@ -118,12 +122,13 @@ section#banner {
   background: transparent;
   cursor: pointer;
   overflow: hidden;
-  background: url(../assets/images/home/bg-icon-box1.jpg);
+  /* background: url(../assets/images/home/bg-icon-box1.jpg); */
+  background: #0ea54c;
   background-position: center center;
   background-size: cover;
   min-height: 275px;
 }
-.service-card:nth-of-type(2) .service-card-box {
+/* .service-card:nth-of-type(2) .service-card-box {
   background: url(../assets/images/home/bg-icon-box2.jpg);
 }
 .service-card:nth-of-type(3) .service-card-box {
@@ -137,10 +142,10 @@ section#banner {
 }
 .service-card:nth-of-type(6) .service-card-box {
   background: url(../assets/images/home/bg-icon-box6.jpg);
-}
+} */
 .service-card-box i {
   font-size: 40px;
-  color: #7141b1;
+  color: #0ea54c;
   position: relative;
   z-index: 1;
   transition: 1s;
@@ -183,7 +188,7 @@ section#banner {
   box-shadow: 0 0 2px #ccc;
 }
 .service-card-box:hover i {
-  color: #43baff;
+  color: #fff;
 }
 .service-card-box:hover .service-name {
   color: #fff;
@@ -223,9 +228,8 @@ section#banner {
   background-color: #211f3b;
 }
 .our-work-bg {
-  background: url(../assets/images/home/bg-art-5.png) no-repeat top left,
-    url(../assets/images/home/bg-art-6.png) no-repeat bottom right;
-  background-size: auto 60%;
+  background: url(../assets/images/home/2863064.png) no-repeat top left;
+  background-size: cover;
   padding: 100px 3%;
   color: #fff;
 }
@@ -238,14 +242,14 @@ section#banner {
   margin: 0 0 20px;
 }
 .code-lang-item {
-  border: 1px solid #aeaacb;
+  border: 2px solid #FFF;
   font-size: 35px;
   width: 75px;
   height: 75px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #43baff;
+  color: #00a64f;
   cursor: pointer;
   transition: 0.5s;
   position: relative;
@@ -253,14 +257,14 @@ section#banner {
 }
 .code-lang-item:hover {
   color: #fff;
-  background: #43baff;
+  background: #00a64f;
 }
 
 /* tooltip */
 .code-lang-item .tooltiptext {
   visibility: hidden;
   width: 80px;
-  background-color: #2bbdfd;
+  background-color: #00a64f;
   color: #fff;
   text-align: center;
   border-radius: 6px;
@@ -284,7 +288,7 @@ section#banner {
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: transparent transparent #2bbdfd transparent;
+  border-color: transparent transparent #00a64f transparent;
 }
 /* tooltip */
 
@@ -314,13 +318,13 @@ a.work-detail-link {
 }
 
 .achievement-info {
-  background: #f8f8f8;
+  background: #e7efc6;
   margin: 0;
   padding: 40px;
 }
 
 h1.number {
-  color: #43baff;
+  color: #00a64f;
   font-size: 48px;
   font-weight: 900;
   font-family: "Montserrat", sans-serif;
@@ -393,7 +397,7 @@ p.achievement-description {
   .our-work-bg {
     padding: 30px 3%;
   }
-  #partner{
+  #partner {
     padding: 25px 3%;
   }
 }
@@ -402,16 +406,16 @@ p.achievement-description {
   .achievement-image-mobi {
     order: 0;
   }
-  footer.footer{
+  footer.footer {
     padding: 0 3% 20px;
   }
-  .footer-end{
+  .footer-end {
     padding: 20px 0 0;
     gap: 20px;
   }
 }
 
-@media all and (max-width: 425px){
+@media all and (max-width: 425px) {
   .banner-text h1.main-heading {
     font-size: 35px;
   }

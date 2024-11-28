@@ -28,15 +28,19 @@
   height: 100%;
 }
 .job-card-box:hover {
-  background: #effaff;
+  background: #55C389;
   cursor: pointer;
   box-shadow: 0 0 10px 2px #ccc;
+  color: #FFF;
 }
 
 h3.job-name {
   font-weight: bold;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #00A64F;
   padding: 0 0 15px;
+}
+.job-card-box:hover h3.job-name{
+  border-bottom: 1px solid #FFF;
 }
 p.job-description {
   margin: 25px 0;
@@ -46,17 +50,24 @@ p.job-info {
   margin: 10px 0 0;
 }
 p.job-info i {
-  color: #2bbdfd;
+  color: #00A64F;
   display: inline-block;
   min-width: 30px;
 }
+.job-card-box:hover p.job-info i {
+  color: #FFF;
+}
 button.apply-btn {
   cursor: pointer;
-  background: #43baff;
+  background: #00A64F;
+  border-color: #00A64F;
   padding: 14px 30px;
   font-size: 16px;
   margin: 40px 0 0;
   border-radius: 0;
+}
+button.apply-btn:hover{
+  background: #55C389;
 }
 
 /* end jobs */

@@ -22,7 +22,7 @@
 }
 .company-info .detail i{
   font-size: 30px;
-  color: #01dcfe;
+  color: #00A64F;
 }
 .customer-info {
   width: 45%;
@@ -32,11 +32,12 @@
   border: 1px solid #ccc;
   width: 100%;
   padding: 30px;
-  background-image: linear-gradient(to right, #01dcfe, #6e45b3);
+  background-image: linear-gradient(to right, #00A64F, #c5e935);
   font-size: 14px;
 }
 .customer-info-box h2.heading {
   margin: 0 0 15px;
+  color: #FFF;
 }
 .customer-info-box p.note {
   margin: 0 0 40px;
@@ -78,6 +79,10 @@
   color: #FFF;
   font-weight: bold;
   transition: 0.5s;
+}
+.contact-btn{
+  border: 2px solid;
+  border-color: #FFF !important;
 }
 /* end contact field */
 
