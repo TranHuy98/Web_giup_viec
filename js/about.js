@@ -6,16 +6,16 @@ const detailField = document.getElementsByClassName("detail");
 
 const infoArr = [
   {
-    heading: "Our Mission",
+    heading: "Nhiệm vụ",
   },
   {
-    heading: "Our Vision",
+    heading: "Thông tin",
   },
   {
-    heading: "Our Philosophy",
+    heading: "Chi phí",
   },
   {
-    heading: "Our Strategy",
+    heading: "Trách nhiệm",
   },
 ];
 

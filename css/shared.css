@@ -169,10 +169,11 @@ a:hover {
 
 .header-info {
   padding: 15px 3%;
-  background: #272346;
-  color: #b5b5b5;
+  background: #00A751;
+  color: #FFF;
   font-size: 14px;
-  display: none !important;
+  font-weight: bold;
+  /* display: none !important; */
 }
 .header-info-left {
   gap: 20px;
@@ -199,7 +200,7 @@ a:hover {
   z-index: 99;
 }
 img#company-logo {
-  width: 150px;
+  width: 130px;
 }
 ul.header-content-menu {
   gap: 15px;
@@ -358,6 +359,7 @@ section#side-banner {
   background-position: bottom left;
   background-size: 100% auto;
   padding: 40px 3%;
+  display: none !important;
 }
 .side-banner-text {
   width: 50%;
@@ -500,7 +502,7 @@ h3 {
 .bar3 {
   width: 35px;
   height: 5px;
-  background-color: #43baff;
+  background-color: #00a64f;
   margin: 6px 0;
   transition: 0.4s;
 }

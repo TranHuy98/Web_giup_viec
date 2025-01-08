@@ -1,114 +1,123 @@
 /* home service */
 #home-service {
-    background: #fff;
-    padding: 40px 3%;
-    text-align: center;
-  }
-  #home-service p.title {
-    color: #242021;
-    font-size: 14px;
-    font-weight: bold;
-  }
-  #home-service h2.heading {
-    font-weight: 900;
-    font-size: 36px;
-    line-height: 1.3;
-    margin: 5px 0 45px;
-    font-family: "Montserrat", sans-serif;
-    color: #0EA54C;
-  }
-  .service-card {
-    background: #fff;
-    padding: 15px;
-  }
-  .service-card-box {
-    border: 1px solid #e7e7e7;
-    padding: 40px;
-    text-align: center;
-    position: relative;
-    background: transparent;
-    cursor: pointer;
-    overflow: hidden;
-    /* background: url(../assets/images/home/bg-icon-box1.jpg);
-     */
-     background: #0EA54C;
-    background-position: center center;
-    background-size: cover;
-    min-height: 275px;
-  }
-  /* .service-card:nth-of-type(2) .service-card-box {
-    background: url(../assets/images/home/bg-icon-box2.jpg);
-  }
-  .service-card:nth-of-type(3) .service-card-box {
-    background: url(../assets/images/home/bg-icon-box3.jpg);
-  }
-  .service-card:nth-of-type(4) .service-card-box {
-    background: url(../assets/images/home/bg-icon-box4.jpg);
-  }
-  .service-card:nth-of-type(5) .service-card-box {
-    background: url(../assets/images/home/bg-icon-box5.jpg);
-  }
-  .service-card:nth-of-type(6) .service-card-box {
-    background: url(../assets/images/home/bg-icon-box6.jpg);
-  } */
-  .service-card-box i {
-    font-size: 40px;
-    color: #0EA54C;
-    position: relative;
-    z-index: 1;
-    transition: 1s;
-  }
-  .service-card-box .service-name {
-    margin: 30px 0 20px;
-    font-size: 20px;
-    line-height: 1.4;
-    color: #1b1d21;
-    font-weight: bold;
-    font-family: "Montserrat", sans-serif;
-    position: relative;
-    z-index: 1;
-    transition: 1s;
-  }
-  .service-card-box .service-description {
-    margin: 0;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #6d6d6d;
-    position: relative;
-    z-index: 1;
-    transition: 1s;
-  }
-  .service-card-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    background: #fff;
-    transition: 0.4s;
-    transition-delay: 0.1s;
-    opacity: 1;
-    user-select: none;
-  }
-  .service-card-box:hover{
-    transition: 0.4s;
-    box-shadow: 0 0 2px #CCC;
-  }
-  .service-card-box:hover i {
-    color: #FFF;
-  }
-  .service-card-box:hover .service-name {
-    color: #fff;
-  }
-  .service-card-box:hover .service-description {
-    color: #fff;
-  }
-  .service-card-box:hover .service-card-bg {
-    left: 100%;
-    opacity: 0.6;
-  }
-  /* end home service */
+  background: #fff;
+  padding: 40px 3%;
+  text-align: center;
+}
+#home-service p.title {
+  color: #242021;
+  font-size: 14px;
+  font-weight: bold;
+}
+#home-service h2.heading {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 1.3;
+  margin: 5px 0 45px;
+  font-family: "Montserrat", sans-serif;
+  color: #0ea54c;
+}
+.service-card {
+  background: #fff;
+  padding: 15px;
+}
+.service-card-box {
+  border: 1px solid #e7e7e7;
+  padding: 30px;
+  text-align: center;
+  position: relative;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 10px;
+  overflow: hidden;
+  background: url(../assets/images/home/viecnha.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 275px;
+}
+.service-card:nth-of-type(2) .service-card-box {
+  background: url(../assets/images/home/nguoibenh.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.service-card:nth-of-type(3) .service-card-box {
+  background: url(../assets/images/home/treem.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.service-card:nth-of-type(4) .service-card-box {
+  background: url(../assets/images/home/dondep.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.service-card:nth-of-type(5) .service-card-box {
+  background: url(../assets/images/home/theogio.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.service-card:nth-of-type(6) .service-card-box {
+  background: url(../assets/images/home/ngaytet.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.service-card-box i {
+  font-size: 40px;
+  color: #0ea54c;
+  position: relative;
+  z-index: 1;
+  transition: 1s;
+}
+.service-card-box .service-name {
+  margin: 30px 0 20px;
+  font-size: 20px;
+  line-height: 1.4;
+  color: #1b1d21;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  z-index: 1;
+  transition: 1s;
+}
+.service-card-box .service-description {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #6d6d6d;
+  position: relative;
+  z-index: 1;
+  transition: 1s;
+}
+.service-card-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  z-index: 0;
+  background: linear-gradient(to right, #eee 50%, #4A4A4A 50%);
+  transition: 0.4s;
+  transition-delay: 0.1s;
+  opacity: 1;
+  user-select: none;
+}
+.service-card-box:hover {
+  transition: 0.4s;
+  box-shadow: 0 0 2px #ccc;
+}
+.service-card-box:hover i {
+  color: #fff;
+}
+.service-card-box:hover .service-name {
+  color: #fff;
+}
+.service-card-box:hover .service-description {
+  color: #fff;
+}
+.service-card-box:hover .service-card-bg {
+  left: -100%;
+  opacity: 0.4;
+}
+/* end home service */
 
   /* service-contact */
   #service-contact{
