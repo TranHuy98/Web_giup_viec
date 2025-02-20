@@ -1,0 +1,173 @@
+/* home service */
+#home-service {
+    background: #fff;
+    padding: 40px 3%;
+    text-align: center;
+  }
+  #home-service p.title {
+    color: #242021;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  #home-service h2.heading {
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 1.3;
+    margin: 5px 0 45px;
+    font-family: "Montserrat", sans-serif;
+    color: #0ea54c;
+  }
+  .service-card {
+    background: #fff;
+    padding: 15px;
+  }
+  .service-card-box {
+    border: 1px solid #e7e7e7;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 10px;
+    overflow: hidden;
+    background: url(../assets/images/home/viecnha.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 275px;
+  }
+  .service-card:nth-of-type(2) .service-card-box {
+    background: url(../assets/images/home/nguoibenh.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .service-card:nth-of-type(3) .service-card-box {
+    background: url(../assets/images/home/treem.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .service-card:nth-of-type(4) .service-card-box {
+    background: url(../assets/images/home/dondep.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .service-card:nth-of-type(5) .service-card-box {
+    background: url(../assets/images/home/theogio.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .service-card:nth-of-type(6) .service-card-box {
+    background: url(../assets/images/home/ngaytet.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .service-card-box i {
+    font-size: 40px;
+    color: #0ea54c;
+    position: relative;
+    z-index: 1;
+    transition: 1s;
+  }
+  .service-card-box .service-name {
+    margin: 30px 0 20px;
+    font-size: 20px;
+    line-height: 1.4;
+    color: #1b1d21;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+    z-index: 1;
+    transition: 1s;
+  }
+  .service-card-box .service-description {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #6d6d6d;
+    position: relative;
+    z-index: 1;
+    transition: 1s;
+  }
+  .service-card-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    z-index: 0;
+    background: linear-gradient(to right, #eee 50%, #4A4A4A 50%);
+    transition: 0.4s;
+    transition-delay: 0.1s;
+    opacity: 1;
+    user-select: none;
+  }
+  .service-card-box:hover {
+    transition: 0.4s;
+    box-shadow: 0 0 2px #ccc;
+  }
+  .service-card-box:hover i {
+    color: #fff;
+  }
+  .service-card-box:hover .service-name {
+    color: #fff;
+  }
+  .service-card-box:hover .service-description {
+    color: #fff;
+  }
+  .service-card-box:hover .service-card-bg {
+    left: -100%;
+    opacity: 0.4;
+  }
+  /* end home service */
+
+
+  /* detail content  */
+
+  div.detail-content{
+    text-align: left;
+    width: 80%;
+  }
+
+  div.detail-banner img{
+    width: 100%;
+    margin: 0 0 30px;
+  }
+
+  div.detail-content h2{
+    font-size: 35px;
+    margin: 0 0 25px;
+    color: #0ea54c;
+  }
+  div.detail-content h2 span{
+    font-size: 20px;
+    color: red;
+    font-weight: bold;
+    vertical-align: 2px;
+  }
+  div.detail-content h3{
+    font-size: 25px;
+    margin: 0 0 15px;
+  }
+  div.detail-content p{
+    font-size: 16px;
+    margin: 0 0 15px;
+    line-height: 1.6;
+  }
+  div.detail-content ul{
+    list-style: none;
+    margin: 0 0 15px 10px;
+  }
+  div.detail-content ul li{
+    padding: 0 0 5px 15px;
+    position: relative;
+  }
+  div.detail-content ul li:before{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    top: 8px;
+    left: 0px;
+    background-color: #0ea54c;
+  }
+
+  /* end detail content  */

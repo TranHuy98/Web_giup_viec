@@ -28,3 +28,5 @@ $(".banner-slide").slick({
   arrows: true,
   dots: false,
 });
+
+
