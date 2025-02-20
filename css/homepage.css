@@ -233,6 +233,49 @@ section#banner {
 }
 /* end partner */
 
+/* review */
+
+#review {
+  background: #F8F8F8;
+  padding: 30px 5%;
+  
+}
+#review h2{
+  font-size: 35px;
+  margin: 0 0 20px
+}
+.review-box{
+  
+  text-align: center;
+}
+.kh-img{
+  border: 2px solid #00A64F;
+  padding: 20px;
+  border-radius: 15px;
+  width: 80%;
+  margin: 0px auto;
+}
+.review-box img{
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: inline-block;
+}
+.kh-name{
+  color: #00A64F;
+  font-size: 20px;
+  margin: 10px 0 20px;
+}
+.kh-location{
+  color: #aaa;
+  font-size: 14px;
+}
+
+/* end review */
+
+
+
 /* work */
 #our-work {
   background-color: #211f3b;

@@ -22,6 +22,17 @@ $(".partner-slide").slick({
   ]
 });
 
+
+$(".review-slide").slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 5000,
+  arrows: false,
+  mobileFirst:true,
+  infinite: true,
+});
+
 $(".banner-slide").slick({
   autoplay: true,
   autoplaySpeed: 5000,
