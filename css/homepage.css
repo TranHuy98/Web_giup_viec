@@ -244,32 +244,60 @@ section#banner {
   font-size: 35px;
   margin: 0 0 20px;
   color: #00A853;
+  text-align: center;
 }
 .review-box{
   
   text-align: center;
+  
 }
 .kh-img{
-  border: 2px solid #00A64F;
-  padding: 20px;
-  border-radius: 15px;
-  width: 80%;
+  padding: 0;
+  border-radius: 5px;
+  width: 98%;
   margin: 0px auto;
+  box-sizing: border-box;
+}
+.clearfix::after{
+  content:"";
+  display: table;
+  clear: both;
+
+}
+.kh-left{
+  float: left;
+  width: 48%;
+  padding: 15px;
+  border: 1px solid #00A64F;
+  background-color: #EEEFF0;
+  border-radius: 5px;
+}
+.kh-right{
+  float: right;
+  width: 48%;
+  padding: 15px;
+  border: 1px solid #00A64F;
+  background-color: #EEEFF0;
+  border-radius: 5px;
 }
 .review-box img{
-  width: 180px;
-  height: 180px;
+  width: 100px;
+  height: 100px;
   object-fit: cover;
   border-radius: 50%;
   display: inline-block;
 }
+p.rating{
+  color: #F1C86B;
+  font-size: 12px;
+  margin: 5px;
+  letter-spacing: 0.1px;
+}
 .kh-name{
-  color: #00A64F;
-  font-size: 20px;
-  margin: 10px 0 20px;
+  font-size: 18px;
+  margin: 0 0 5px;
 }
 .kh-location{
-  color: #aaa;
   font-size: 14px;
 }
 
@@ -466,6 +494,13 @@ p.achievement-description {
   .footer-end {
     padding: 20px 0 0;
     gap: 20px;
+  }
+  .kh-left{
+    width: 100%;
+  }
+  .kh-right{
+    width: 100%;
+    margin: 15px 0 0;
   }
 }
 
