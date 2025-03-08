@@ -399,17 +399,18 @@ section#side-banner {
 footer.footer {
   background: #00A64F;
   color: #fff;
-  padding: 80px 3% 50px;
-  padding: 0 3% 40px;
+  padding: 30px 3%;
 }
 
 .footer-menu {
   margin: 0;
-  display: none !important;
+  /* display: none !important; */
+  flex-wrap: wrap;
+  gap: 15px;
 }
 .footer-menu-column {
   margin: 0;
-  width: 23%;
+  width: 30%;
 }
 .footer-menu-column h3.element {
   font-size: 20px;
@@ -422,7 +423,6 @@ footer.footer {
   list-style: none;
   margin: 0 0 10px;
   font-size: 16px;
-  color: #aeaacb;
 }
 .footer-menu-column ul li:hover {
   cursor: pointer;
@@ -466,6 +466,21 @@ footer.footer {
 
   margin: 0 0 0;
   border: none;
+}
+
+.map{
+  width: 100%;
+  max-width: 600px;
+  height: 200px;
+  margin: 15px 0 0;
+}
+
+p.copyright{
+  padding: 10px 0;
+  border-top: 1px solid #FFF;
+  border-bottom: 1px solid #FFF;
+  width: 100%;
+  text-align: center;
 }
 /* end footer */
 
@@ -534,17 +549,17 @@ h3 {
   }
   .header-content {
     padding: 20px 3%;
-    height: 80px;
+    height: 100px;
   }
   ul.mobi-dropdown {
-    border-top: 2px solid #43baff;
+    border-top: 2px solid #00A853;
     list-style: none;
     position: absolute;
-    top: 80px;
+    top: 100px;
     width: 100%;
     right: 0;
-    background: #0d0b30;
-    color: #fff;
+    background: #FFF;
+    color: #00A853;
     transition: 0.5s;
     z-index: 2;
     display: none;
@@ -553,7 +568,7 @@ h3 {
     margin: 0;
     padding: 10px 3%;
     text-align: right;
-    border-bottom: 1px solid #43baff;
+    border-bottom: 1px solid #00A853;
     font-weight: bold;
   }
   .mobi-menu-toggle {
@@ -562,6 +577,12 @@ h3 {
 
  
 
+}
+
+@media all and (max-width: 768px){
+  .footer-menu-column{
+    width: 100%;
+  }
 }
 
 @media all and (max-width: 576px){
@@ -581,7 +602,7 @@ h3 {
     order: 0;
   }
   footer.footer{
-    padding: 0 3% 20px;
+    padding: 20px 3% 20px;
   }
   .footer-end{
     padding: 20px 0 0;
@@ -596,3 +617,163 @@ h3 {
 }
 
 /* End Mobi menu */
+
+
+
+/* phone */
+
+div.phone-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 3%;
+  left: 3%;
+  z-index: 99;
+}
+p.phone-number{
+  position: absolute;
+  top: 8px;
+  left: 44px;
+  background: #1E9BD9;
+  padding: 5px 10px 5px 9px;
+  border-radius: 0 10px 10px 0;
+  font-size: 18px;
+  color: #FFF;
+  font-weight: bold;
+}
+
+.Phone {
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 50px;
+  height: 50px;
+  font-size: 25vmin;
+  background-color: #3498db;
+  border-radius: 0.5em;
+  box-shadow:
+    0 0 0 0em rgba(#3498db, 0),
+    0em 0.05em 0.1em rgba(#000000, 0.2);
+  transform: translate3d(0, 0, 0) scale(1);
+}
+
+.Phone::before,
+.Phone::after {
+  position: absolute;
+  content: "";
+}
+
+.Phone::before {
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(#fff, 0.1);
+  border-radius: 100%;
+  opacity: 1;
+  transform: translate3d(0, 0, 0) scale(0);
+}
+
+.Phone::after {
+  top: 7px;
+  left: 7px;
+  width: 35px;
+  height: 35px;
+  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTYuNiAxMC44YzEuNCAyLjggMy44IDUuMSA2LjYgNi42bDIuMi0yLjJjLjMtLjMuNy0uNCAxLS4yIDEuMS40IDIuMy42IDMuNi42LjUgMCAxIC40IDEgMVYyMGMwIC41LS41IDEtMSAxLTkuNCAwLTE3LTcuNi0xNy0xNyAwLS42LjQtMSAxLTFoMy41Yy41IDAgMSAuNCAxIDEgMCAxLjIuMiAyLjUuNiAzLjYuMS40IDAgLjctLjIgMWwtMi4zIDIuMnoiIGZpbGw9IiNmZmZmZmYiLz48L3N2Zz4=);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: translate3d(0, 0, 0);
+}
+
+.Phone.is-animating {
+  animation: phone-outer 3000ms infinite;
+  
+  &::before {
+    animation: phone-inner 3000ms infinite;
+  }
+  
+  &::after {
+    animation: phone-icon 3000ms infinite;
+  }
+}
+
+@keyframes phone-outer {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+    box-shadow:
+      0 0 0 0em rgba(#3498db, 0),
+      0em 0.05em 0.1em rgba(#000000, 0.2);
+  }
+  33.3333% {
+    transform: translate3d(0, 0, 0) scale(1.1);
+    box-shadow:
+      0 0 0 0em rgba(#3498db, 0.1),
+      0em 0.05em 0.1em rgba(#000000, 0.5);
+  }
+  66.6666% {
+    transform: translate3d(0, 0, 0) scale(1);
+    box-shadow:
+      0 0 0 0.5em rgba(#3498db, 0),
+      0em 0.05em 0.1em rgba(#000000, 0.2);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+    box-shadow:
+      0 0 0 0em rgba(#3498db, 0),
+      0em 0.05em 0.1em rgba(#000000, 0.2);
+  }
+}
+
+@keyframes phone-inner {
+  0% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(0);
+  }
+  33.3333% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(0.9);
+  }
+  66.6666% {
+    opacity: 0;
+    transform: translate3d(0, 0, 0) scale(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(0, 0, 0) scale(0);
+  }
+}
+
+@keyframes phone-icon {
+  0% { transform: translate3d(0em, 0, 0); }
+  2% { transform: translate3d(0.01em, 0, 0); }
+  4% { transform: translate3d(-0.01em, 0, 0); }
+  6% { transform: translate3d(0.01em, 0, 0); }
+  8% { transform: translate3d(-0.01em, 0, 0); }
+  10% { transform: translate3d(0.01em, 0, 0); }
+  12% { transform: translate3d(-0.01em, 0, 0); }
+  14% { transform: translate3d(0.01em, 0, 0); }
+  16% { transform: translate3d(-0.01em, 0, 0); }
+  18% { transform: translate3d(0.01em, 0, 0); }
+  20% { transform: translate3d(-0.01em, 0, 0); }
+  22% { transform: translate3d(0.01em, 0, 0); }
+  24% { transform: translate3d(-0.01em, 0, 0); }
+  26% { transform: translate3d(0.01em, 0, 0); }
+  28% { transform: translate3d(-0.01em, 0, 0); }
+  30% { transform: translate3d(0.01em, 0, 0); }
+  32% { transform: translate3d(-0.01em, 0, 0); }
+  34% { transform: translate3d(0.01em, 0, 0); }
+  36% { transform: translate3d(-0.01em, 0, 0); }
+  38% { transform: translate3d(0.01em, 0, 0); }
+  40% { transform: translate3d(-0.01em, 0, 0); }
+  42% { transform: translate3d(0.01em, 0, 0); }
+  44% { transform: translate3d(-0.01em, 0, 0); }
+  46% { transform: translate3d(0em, 0, 0); }
+}
+
+
+/* end phone */

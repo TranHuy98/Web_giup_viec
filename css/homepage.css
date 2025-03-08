@@ -242,7 +242,8 @@ section#banner {
 }
 #review h2{
   font-size: 35px;
-  margin: 0 0 20px
+  margin: 0 0 20px;
+  color: #00A853;
 }
 .review-box{
   
@@ -460,7 +461,7 @@ p.achievement-description {
     order: 0;
   }
   footer.footer {
-    padding: 0 3% 20px;
+    padding: 20px 3% 20px;
   }
   .footer-end {
     padding: 20px 0 0;

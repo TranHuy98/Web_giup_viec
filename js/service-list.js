@@ -1,12 +1,12 @@
 let productList = document.getElementsByClassName('service-card-box');
 
-console.log(productList);
+// console.log(productList);
 
 for(let i=0;i<productList.length;i++){
-  console.log(productList[i]);
+  // console.log(productList[i]);
 }
 
-console.log('1');
+
 
 let pID;
 

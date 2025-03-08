@@ -171,3 +171,40 @@
   }
 
   /* end detail content  */
+
+  /* price */
+
+  .price{
+    background-color: #e7e7e7;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .price h2{
+    color: #0ea54c;
+    font-size: 30px;
+    margin: 0 0 30px;
+  }
+  table{
+    width: 100%;
+    border: 2px solid #0ea54c;
+  }
+  thead td{
+    padding: 5px 10px;
+    background: #F1C86B;
+    color: #FFF;
+    word-break: break-word;
+    font-weight: bold;
+  }
+  tbody td{
+    padding: 5px 10px;
+    word-break: break-word;
+  }
+  tr:nth-of-type(odd){
+    background: #FFF;
+  }
+  col[data-name="price"]{
+    border-left: 2px solid #0ea54c;
+    border-right: 2px solid #0ea54c;
+  }
+  /* end price */
